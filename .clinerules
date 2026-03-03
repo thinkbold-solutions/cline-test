@@ -13,6 +13,7 @@ Run: git stash push -m "pre-cline-$(date +%Y%m%d-%H%M)" before any changes.
 ## Rules
 - TypeScript strict mode — no `any` types
 - ESM imports only (no require())
+- **All relative imports must use `.js` extension** — e.g. `import { foo } from './foo.js'` (NodeNext resolution requires this even for .ts files)
 - No console.log in committed code (use return values)
 - Keep functions small and focused
 - No new packages without explicit instruction
