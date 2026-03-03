@@ -2,3 +2,4 @@
 export {}
 export * from './slugify.js';
 export * from './truncate.js';
+export * from './pad.js';
