@@ -5,6 +5,13 @@ Before doing anything, read ~/tasks/session-state.md — find the
 ## CLINE BRIEF — ACTIVE section and follow it exactly.
 Run: git stash push -m "pre-cline-$(date +%Y%m%d-%H%M)" before any changes.
 
+## Scope Discipline
+- Only read and edit files explicitly mentioned in the brief
+- If a file already satisfies an acceptance criterion, skip it — do NOT rewrite it
+- Check each acceptance criterion ONE time. If it passes, move on. Do not re-verify in a loop.
+- If `tsc --noEmit` passes, stop. Do not run it again.
+- If a file already exists and is correct, do NOT touch it
+
 ## Stack
 - TypeScript (strict mode, ESM)
 - Node.js utilities, no framework
