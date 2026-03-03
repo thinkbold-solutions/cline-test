@@ -4,3 +4,4 @@ export * from './slugify.js';
 export * from './capitalize.js';
 export * from './pad.js';
 export * from './truncate.js';
+export * from './clamp.js';
