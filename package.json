@@ -1,0 +1,13 @@
+{
+  "name": "cline-test",
+  "version": "0.1.0",
+  "description": "Cline AI workflow sandbox",
+  "type": "module",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

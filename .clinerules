@@ -1,0 +1,21 @@
+# Cline Rules — cline-test sandbox
+
+## First: Always Read the Brief
+Before doing anything, read ~/tasks/session-state.md — find the
+## CLINE BRIEF — ACTIVE section and follow it exactly.
+Run: git stash push -m "pre-cline-$(date +%Y%m%d-%H%M)" before any changes.
+
+## Stack
+- TypeScript (strict mode, ESM)
+- Node.js utilities, no framework
+- Source in src/, output in dist/
+
+## Rules
+- TypeScript strict mode — no `any` types
+- ESM imports only (no require())
+- No console.log in committed code (use return values)
+- Keep functions small and focused
+- No new packages without explicit instruction
+
+## Verification
+After each change: confirm the file compiles (tsc --noEmit), report what was changed and why.
