@@ -7,3 +7,4 @@ export * from './pad.js';
 export * from './truncate.js';
 export * from './clamp.js';
 export * from './range.js';
+export * from './flatten.js';
