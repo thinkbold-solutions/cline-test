@@ -19,16 +19,14 @@ export function truncate(text: string, maxLength: number, suffix: string = "…"
     return text;
   }
 
-  // Budget: chars available before suffix so final string stays <= maxLength
-  const budget = maxLength - suffix.length;
-
-  // Find the last word boundary within budget
-  const lastSpaceIndex = text.lastIndexOf(" ", budget);
+  // Find the last word boundary before maxLength
+  const lastSpaceIndex = text.lastIndexOf(" ", maxLength);
   if (lastSpaceIndex === -1) {
-    // No word boundary found, cut at budget exactly
-    return text.slice(0, budget) + suffix;
+    // No word boundary found, cut at maxLength exactly
+    return text.slice(0, maxLength) + suffix;
   }
 
   // Cut at the last word boundary and append suffix
-  return text.slice(0, lastSpaceIndex) + suffix;
+  const truncatedText = text.slice(0, lastSpaceIndex);
+  return truncatedText + suffix;
 }
