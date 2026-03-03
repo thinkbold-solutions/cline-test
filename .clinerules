@@ -2,8 +2,8 @@
 # ⚠️ Do NOT modify this file. It is maintained by the human operator.
 
 ## First: Always Read the Brief
-Before doing anything, read ~/tasks/session-state.md — find the
-## CLINE BRIEF — ACTIVE section and follow it exactly.
+Before doing anything, read /Users/coreydierdorff/tasks/active-brief.md — this is your task.
+If that file is empty, read /Users/coreydierdorff/tasks/session-state.md and find the ## CLINE BRIEF — ACTIVE section.
 Run: git stash push -m "pre-cline-$(date +%Y%m%d-%H%M)" before any changes.
 
 ## Scope Discipline
